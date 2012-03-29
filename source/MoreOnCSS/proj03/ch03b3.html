@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Project 3</title>
+<style type="text/css">
+h2, h3 {margin: 0; border: 1px solid gray;}
+h2 {border-width: 0 0 0 1px; padding: 0 0 0 0.25em}
+h3 {border-width: 1px 1px 0 0; padding: 0.1em 0.33em;}
+table {width: 100%;}
+th, td {text-align: right; padding: 0 0.5em;
+  border-bottom: 1px solid #DDD;}
+td {font: small Verdana, "Andale Mono", Courier, "Courier New", 
+  monospace;}
+thead th {vertical-align: bottom; border: 1px solid gray;
+  border-width: 0 1px 1px 0;
+  white-space: normal;}
+th {border-right: 1px solid gray; border-bottom-style: dotted;
+  white-space: nowrap;}
+td {letter-spacing: -1px;}
+td.profit {background: #CEC; border-bottom-color: white;
+  border-right: 1px solid gray;}
+td.neg {background: #FF3; color: red;}
+tr.totals td {font-weight: bold; border-bottom: 1px solid gray;}
+tr.totals td.profit {border: 1px solid black;}
+tr.totals th {border-bottom-style: solid;}
+</style>
+<style type="text/css" media="screen">
+h2 {border-width: 0;}
+h3 {border-width: 1px; padding: 0.1em 0.33em;}
+table tr.odd * {background: #EEE;}
+tr.odd *, tr.even * {border-bottom: 1px solid #EEE;}
+tr.odd th, tr.even th, thead th.market {border-left: 1px solid gray;}
+td {border-right: 1px solid #CCC;}
+td.profit, td.neg {color: #000; background: #FFF;}
+td.profit {font-weight: bold;}
+td.neg {font-style: italic;}
+tr.totals * {border-top: 1px solid gray;}
+tr.totals th {border-bottom: none; text-transform: uppercase;}
+</style>
+</head>
+<body>
+<h2>Northeast U.S.</h2>
+<h3>Fall 2003</h3>
+
+<table cellspacing="0" summary="Q3 Financial Results">
+<thead>
+<tr>
+<th class="market">Market</th>
+<th>Units Sold</th>
+<th>Revenue</th>
+<th>Units Returned</th>
+<th>Units Damaged</th>
+<th>Loss</th>
+<th>Expenses</th>
+<th class="profit">Profit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th>Boston</th>
+<td>21,223</td>
+<td>$317,283.85</td>
+<td>2,761</td>
+<td>2,968</td>
+<td>$85,657.41</td>
+<td>$295,830.50</td>
+<td class="profit neg">-$64,204.06</td>
+</tr>
+<tr class="even">
+<th>Cleveland</th>
+<td>23,544</td>
+<td>$351,982.80</td>
+<td>1,832</td>
+<td>1,128</td>
+<td>$44,247.19</td>
+<td>$216,411.76</td>
+<td class="profit">$91,323.85</td>
+</tr>
+<tr class="odd">
+<th>Chicago</th>
+<td>19,437</td>
+<td>$290,583.15</td>
+<td>2,841</td>
+<td>2,592</td>
+<td>$81,223.68</td>
+<td>$305,189.00</td>
+<td class="profit neg">-$95,829.53</td>
+</tr>
+<tr class="even">
+<th>Cincinnati</th>
+<td>22,983</td>
+<td>$343,595.85</td>
+<td>1,641</td>
+<td>1,934</td>
+<td>$53,457.49</td>
+<td>$286,294.98</td>
+<td class="profit">$3,843.38</td>
+</tr>
+<tr class="odd">
+<th>Detroit</th>
+<td>17,238</td>
+<td>$257,708.10</td>
+<td>2,716</td>
+<td>672</td>
+<td>$50,649.04</td>
+<td>$244,984.65</td>
+<td class="profit neg">-$37,925.59</td>
+</tr>
+<tr class="even">
+<th>Milwaukee</th>
+<td>28,649</td>
+<td>$428,302.55</td>
+<td>2,458</td>
+<td>862</td>
+<td>$49,631.41</td>
+<td>$198,592.65</td>
+<td class="profit">$180,078.49</td>
+</tr>
+<tr class="odd">
+<th>New York City</th>
+<td>47,128</td>
+<td>$704,563.60</td>
+<td>2,802</td>
+<td>2,617</td>
+<td>$81,013.00</td>
+<td>$501,983.00</td>
+<td class="profit">$121,567.60</td>
+</tr>
+<tr class="even">
+<th>Philadelphia</th>
+<td>20,057</td>
+<td>$299,852.15</td>
+<td>767</td>
+<td>2,560</td>
+<td>$49,750.52</td>
+<td>$379,058.49</td>
+<td class="profit neg">-$128,956.86</td>
+</tr>
+<tr class="odd">
+<th>Pittsburgh</th>
+<td>20,992</td>
+<td>$313,830.40</td>
+<td>1,492</td>
+<td>2,556</td>
+<td>$60,520.33</td>
+<td>$237,459.20</td>
+<td class="profit">$15,850.87</td>
+</tr>
+<tr class="even">
+<th>Washington DC</th>
+<td>31,569</td>
+<td>$471,956.55</td>
+<td>1,361</td>
+<td>1,765</td>
+<td>$46,736.05</td>
+<td>$458,230.54</td>
+<td class="profit neg">-$33,010.04</td>
+</tr>
+<tr class="totals">
+<th>Totals</th>
+<td>252,820</td>
+<td>$3,779,659.00</td>
+<td>20,673</td>
+<td>19,654</td>
+<td>$602,886.12</td>
+<td>$3,124,034.77</td>
+<td class="profit">$52,738.11</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {color: rgb(18%,19%,17%); background: rgb(85%,92%,81%);
+ font: 0.85em Verdana, sans-serif;
+ margin: 0; padding: 0;}
+#weblog {width: 99%;}
+#weblog h3 {font-size: 150%; text-align: center;
+  color: rgb(10%,30%,10%);
+  border: 1px solid rgb(30%,50%,30%); border-width: 1px 0;
+  margin-bottom: 1.5em; padding-top: 7px; height: 38px;
+  background: url(title.gif) 50% 100% no-repeat;}
+#weblog h3 span {position: absolute; left: -50em;}
+#weblog .entry {margin: 0 0 2em; letter-spacing: -1px;}
+#weblog h4.title, #weblog h5.date {margin: 0; padding: 0;
+  font-family: Arial, Verdana, sans-serif; line-height: 1em;
+  letter-spacing: 0;}
+#weblog h4.title {font-size: 1.25em; text-align: right;
+  padding: 5px 25px 0 0; margin: 0 45% -1px 0;
+  background: url(leaf-up.gif) 100% 0 no-repeat;
+  border-bottom: 1px solid rgb(50%,66%,50%);}
+#weblog h4.title a {text-decoration: none;
+  color: rgb(15%,30%,15%);}
+#weblog h4.title a:hover {border-top: 1px dotted rgb(50%,61%,48%);}
+#weblog h4.title a:hover:before {content: "# ";
+  color: rgb(50%,61%,48%);}
+#weblog h5.date {font-size: 0.9em; text-align: left;
+  padding: 0 0 5px 25px; margin: 0 0 0 45%; 
+  background: url(leaf-down.gif) 0 100% no-repeat;
+  border-top: 1px solid; color: rgb(50%,66%,50%);}
+#weblog .moreinfo {margin: 0; padding: 0;
+  text-align: right; font-style: italic;
+  border-right: 1px solid rgb(50%,66%,50%);
+  color: rgb(50%,66%,50%);}
+#weblog .moreinfo li {display: inline; list-style: none;
+  border-left: 1px solid rgb(65%,75%,65%);
+  padding: 0 0.5em;}
+#weblog .moreinfo a {color: rgb(50%,66%,50%); font-style: normal;}
+#weblog .moreinfo .categories {font-weight: bold;}
+#weblog p {line-height: 1.4;}
+#weblog .pic {float: right; margin: 1em 0 1em 2em;}
+#weblog .border {border: 3px double #666; background: #ABA;}

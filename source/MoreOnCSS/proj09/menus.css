@@ -1,0 +1,24 @@
+#navpres ul {margin: 0; padding: 0; background: white;
+  border: 1px solid #CCC; border-width: 0 1px;}
+#navpres li {position: relative; list-style: none;
+  float: left; width: 8em; background: rgb(73%,82%,73%);
+  border: 1px solid rgb(45%,65%,45%); border-width: 0 1px 1px 0;}
+#navpres li:hover {background: #EBB;}
+#navpres li.submenu:hover {background-color: #EDD;}
+#navpres li a {display: block; padding: 0.25em 0 0.25em 0.5em;
+  text-decoration: none; width: 9.5em;}
+#navpres>ul a {width: auto;}
+#navpres ul ul {position: absolute; width: 8em;
+  border-top: 1px solid rgb(45%,65%,45%); display: none;}
+#navpres ul ul li {border: none; border-bottom: 1px solid rgb(45%,65%,45%);}
+#navpres ul.level1 li.submenu:hover ul.level2, 
+#navpres ul.level2 li.submenu:hover ul.level3 {display:block;}
+#navpres ul.level2 {top: 1.5em; left: -1px; margin-top: 2px;}
+#navpres ul.level3 {top: -1px; left: 8em;
+  border-top: 1px solid rgb(45%,65%,45%);}
+.panel #natural a {color: rgb(30%,40%,30%);}
+.panel a:link {color: rgb(30%,50%,30%);}
+.panel a:visited, #presolinks a {color: rgb(50%,60%,50%);}
+.panel a:hover {color: rgb(50%,30%,20%);}
+.panel #natural {font-weight: bold; font-style: italic;
+  letter-spacing: 1px; text-transform: lowercase;}
