@@ -1,1 +1,1 @@
-Can push.
+This change only on master.
