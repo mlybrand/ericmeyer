@@ -107,6 +107,24 @@
 		color: white;
 		text-align: center;
 	}
+	tr.even td {
+		background: #F7F0E7;
+		width: 50%;
+	}
+	td.r3 {
+		color: #660;
+	}
+	td.r5 {
+		color: #060;
+	}
+	div#traveltip {
+		border: 3px solid #804040;
+		background: #EBDAC6;
+		text-align: center;
+		margin-top: 1.5em;
+		padding: 8px;
+		font-size: 66%;
+	}
 -->
 </style>
 </head>
@@ -198,25 +216,25 @@ Ragged Point Inn &amp; Restaurant
 <tr>
 <td colspan="2" class="head">Ratings</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Amenities</td>
-<td>***</td>
+<td class="r3">***</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Location</td>
-<td>*****</td>
+<td class="r5">*****</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Dining</td>
-<td>*****</td>
+<td class="r5">*****</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Service</td>
-<td>*****</td>
+<td class="r5">*****</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Overall</td>
-<td>*****</td>
+<td class="r5">*****</td>
 </tr>
 <tr>
 <td colspan="2" class="head">Price</td>
@@ -252,22 +270,10 @@ Ragged Point Inn &amp; Restaurant
 </tr>
 </table>
 
-<table cellspacing="0">
-<tr>
-<td>
-
-<table cellspacing="0">
-<tr>
-<td>
-Traveler's Tip
-Call to reserve a room at least six weeks in advance of your arrival, double that in the summer.
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table>
+<div id="traveltip">
+	<b>Traveler's Tip</b><br>
+	Call to reserve a room at least six weeks in advance of your arrival, double that in the summer.
+</div>
 
 </td>
 </tr>
