@@ -10,8 +10,33 @@ I think that the hardest part of this assignment will be doing something about t
 
 First we will make a copy of the old file to use as a reference.
 
-Next up is to set the `doctype` correctly:
+Next let's rip out all the CSS, because we need to work on adding bootstrap and working on our markup, before we even need to worry about styling again.
+
+Now we'll  set the `doctype` correctly:
 
 ```
 <doctype html>
 ```
+
+Let's go get bootstrap and include the necessary files.  Go to [Get Bootstrap](http://getbootstrap.com) and download the latest distribution of bootstrap.
+
+For now we will only include the stylesheet as I don't think we will need to use anything that requires any of the features that have JavaScript as a dependency.  Since I am riding along with you guys as I do this, I may change my mind down the line and add those assets in.  I will include the font files for referential integrity of the CSS files, and I can at least replace the asterisks in the ratings with a groovier icon.
+
+So, I will make a **css** folder and put the following files in it (including the *.map file so Chrome won't bitch at me):
+
+```
+bootstrap.css
+bootstrap.css.map
+```
+
+and I will create a **fonts** folder and include all the files there.
+
+Now let's reference the bootstrap css and see what we get without doing anything at all.
+
+```
+<link rel="stylesheet" href="css/bootstrap.css">
+```
+
+
+
+
