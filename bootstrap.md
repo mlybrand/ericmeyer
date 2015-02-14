@@ -6,3 +6,8 @@ This project went a long way to taking a late 90s early 00s web page and began t
 
 So, we will take this project a step further.  We will apply some HTML semantics to the page.  And will use Bootstrap to handle the layout and get the page to be a little more responsive.
 
+First up is to set the `doctype` correctly:
+
+```
+<doctype html>
+```
