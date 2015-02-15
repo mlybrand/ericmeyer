@@ -56,3 +56,14 @@ I will keep the ids since those add some semantics to the content. When we start
 
 Before we section off the next part, I will need to format the code a bit, since the content and the footer are mixed together in a big, ugly layout table. I need to see what I am working with as I start to dismantle it.
 
+Since the footer stuff doesn't belong there, let's rip it out and put it in its own `footer` section. Again each of the table cells we will turn into `div` tags. We'll keep the ids for now:
+
+```
+<footer>
+    <div id="feedback"><a href="/feeback.html">Feedback - Contact</a></div>
+    <div id="tg">Travel Guide</div>
+    <div id="copyright">Copyright 2002</div>
+</footer>
+```
+
+
