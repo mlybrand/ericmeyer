@@ -37,6 +37,22 @@ Now let's reference the bootstrap css and see what we get without doing anything
 <link rel="stylesheet" href="css/bootstrap.css">
 ```
 
+If we look at the high-level page layout, we have the three standard *rows* of content:
 
+* header
+* content
+* footer
 
+So, not really a modern way of making a masthead bar, I will leave it alone and not try to create what this company should be doing today.  For one, it is generally good to have some site-wide navigation, but that can come from the team after we get the sit layout done in bootstrap.  The upshot is that this needs to be in a `header` element since it is the header. and we will break the two table cells into to two `div` elements:
+
+```
+<header>
+	<div>...</div>
+	<div>...</div>
+</header>
+```
+
+I will keep the ids since those add some semantics to the content. When we start applying bootstrap styles, we can consider removing those ids (assuming they aren't being used for some other purpose).
+
+Before we section off the next part, I will need to format the code a bit, since the content and the footer are mixed together in a big, ugly layout table. I need to see what I am working with as I start to dismantle it.
 
