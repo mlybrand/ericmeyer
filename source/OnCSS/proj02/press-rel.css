@@ -5,13 +5,15 @@ body {
 p {
    margin-left: 10%;
    margin-right: 10%;
-}
-p.lead-para:first-letter {
-   font-size: 133%;
-   font-weight: bold;
+   text-align: justify;
+   line-height: 1.33em;
 }
 p#summary {
-   font-style: italic;
+   border: 2px solid #008000;
+   border-width: 2px 2px 2px 2em;
+   padding: 0.5em 0.5em 0.5em 1em;
+   background: #FFE;
+   line-height: 1em;
 }
 div.release {
    font-variant: small-caps;
@@ -36,13 +38,13 @@ div#contact-info:first-line {
    font-size: 1.111em;
 }
 div#footer {
-   text-align: center;
+   text-align: right;
    margin-top: 2.5em;
    border-top: 1px solid gray;
    color: #AAA;
    font-size: 85%;
    padding-top: 0.33em;
-   letter-spacing: 1px;
+   font-style: italic;
 }
 div#footer a:link {
    color: #778;
@@ -54,18 +56,22 @@ a.stockinfo {
    font-weight: bold;
    font-style: normal;
    color: blue;
-   background: white;
+   background: #FFE;
 }
 a.stockinfo:hover {
    background: blue;
    color: white;
 }
 h1 {
-   margin-bottom: 0;
-   margin-top: 1em;
+   font-size: 250%;
+   margin-top: -2.5em;
+   margin-right: 5em;
+   padding-left: 0.33em;
+   text-indent: -0.25em;
 }
 h2 {
-   margin: 0 5% 0 7.5%;
-   font-size: 120%;
+   font-size: 150%;
    font-style: italic;
+   text-align: center;
+   margin: 0 10%;
 }
