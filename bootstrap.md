@@ -66,4 +66,44 @@ Since the footer stuff doesn't belong there, let's rip it out and put it in its 
 </footer>
 ```
 
+I have been wanting to focus on semantic markup and avoid bootstrap for the time being, but I will make an exception this time.  Namely, bootstrap provides a class called `container` that I want to use for my content section:
 
+```
+<div class="container">
+...
+</div>
+```
+
+That action brings a ton of consequences.  Lots of font and margin/padding changes.  But also, it leads us to start thinking in terms of what bootstrap will want from us for the layout.  This is not a bad thing though, as we can use it to get rid of all the table mess and start to think about semantics again on the other side.
+
+The first thing I notice is that the page below the header is essentially divided into two columns. Even though there is the right column, it is up under the breadcrumb widget, so our two columns are the **Destinations** column, and everything else.  I am not sure if the semantic intention was to give so much weight to **Destinations**, but given the layout, that is what I will assume.
+
+Bootstrap uses a grid system to lay out content horizontally.  The grid is divided into 12 columns and you decide how many of those columns the content should occupy.  My screen resolution is much larger than was typically for back in the day, but from working the excercise I have a feel for how far to zoom everything in, which in my case was ``<ctrl> - +` 5 times.
+
+Left-side was set at 120px. Right-side at 150px.  Content takes up the remainder.  Left and right give us 270px.  In 2002/2003 average screen widths were transitioning from 800px to 1024px.  So that means that content was taking up between 530px and 754px.
+
+We will be dividing our second column into two columns also.  The bootstrap grid system works is that within containers, the container itself is dividing up into 12 columns.  So, working backwards, if we figure out how the content and the right side divide up their space, that should give us some insight into how much to allocate to the left side and everything else. Clear as mud.
+
+The right column was supposed to take up a fixed width of 150px and the content was somewhere between 530px and 754px which has the right side taking up between 22% and 16.5%.  I will go with the latter to start.
+
+What do we have now? I am going to start with 2 columns for my left side and 10 columns for everything else.  With the "everything else", I will have my content use 10 columns and my right side to take 2 columns.  Hopefully that will be close.  
+
+When I code this up I need to remove some table stuff as well. My result will be this structure:
+
+```
+<div class="row">
+	<div class="col-sm-2">
+		Left side
+	</div>
+	<div class="col-sm-10">
+		Everything else
+	</div>
+</div>
+```
+
+Note: I just spent several minutes trying to figure out why my layout was not rendering correctly.  Since I have the page zoomed in, the bootstrap media queries are being hit and causing a smaller form factor to fire. I will change my classes from **md** to **sm** which is probably the right answer anyway, since back in the day, that is what the screen resolution was in a way.
+
+I will put the left side stuff in first.  I will leave the links in a table for now, but **Destinations** I will make an `<h3>`:
+
+```
+<h2></h2>
