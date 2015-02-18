@@ -1,12 +1,17 @@
 body {
    background: white url(WidgetCoLogo.gif) center no-repeat;
    color: black;
+   font-family: serif;
 }
 p {
    margin-left: 10%;
    margin-right: 10%;
    text-align: justify;
    line-height: 1.33em;
+}
+p.main {
+   margin: 0 10%;
+   text-indent: 3em;
 }
 p#summary {
    border: 2px solid #008000;
@@ -62,6 +67,9 @@ a.stockinfo:hover {
    background: blue;
    color: white;
 }
+h1, h2 {
+   font-family: sans-serif;
+}
 h1 {
    font-size: 250%;
    margin-top: -2.5em;
@@ -73,5 +81,5 @@ h2 {
    font-size: 150%;
    font-style: italic;
    text-align: center;
-   margin: 0 10%;
+   margin: 0 10% 16px 10%;
 }
