@@ -103,7 +103,40 @@ When I code this up I need to remove some table stuff as well. My result will be
 
 Note: I just spent several minutes trying to figure out why my layout was not rendering correctly.  Since I have the page zoomed in, the bootstrap media queries are being hit and causing a smaller form factor to fire. I will change my classes from **md** to **sm** which is probably the right answer anyway, since back in the day, that is what the screen resolution was in a way.
 
-I will put the left side stuff in first.  I will leave the links in a table for now, but **Destinations** I will make an `<h3>`:
+I will put the left side stuff in first.  I will leave the links in a table for now, but **Destinations** I will make an `<h2>`:
 
 ```
 <h2></h2>
+```
+
+That's really big.  So, I will need to style that down the road.  Alternatively, it could just mean that for **sm** this layout is simply inappropriate.  When I size back out to regular size, there is a crap-ton of whitespace, so there is definitely some decision I will need to make about form factors before all is said and done.  But right now is not the time, because there are still an uncomfortably large number of tables lying around.
+
+Referring back to the old layout, we have two rows, one for the breadcrumbs that will take up all 12 units. And one that is shared by our content and our right side bar, which we already decided would take 10 and 2 respectively.  So, let's annihilate a couple more tables.
+
+First two rows:
+
+```
+<div class="col-sm-10">
+	<div class="row">
+		...
+	</div>
+	<div class="row">
+		...
+	</div>
+</div>
+```
+
+Then just one row inside our second row div, with a 10 column and a 2 column:
+
+```
+<div class="row'">
+	<div class="row">
+		<div class="col-sm-10">
+			...
+		</div>
+		<div class="col-sm-2">
+			...
+		</div>
+	</div>
+</div>
+```
