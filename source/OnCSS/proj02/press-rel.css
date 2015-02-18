@@ -21,13 +21,11 @@ div.release {
    margin-right: 10px;
    padding: 0.125em 0;
    border: 1px solid black;
-   border-width: 1px 15px 1px 0;
+   border-width: 1px 0 1px 15px;
 }
 div#contact-info {
-   text-align: right;
-   margin-right: 10px;
-   padding-right: 15px;
-   border-right: 15px solid #446;
+   padding-left: 10px;
+   border-left: 15px solid #446;
    padding-top: 0.25em;
    color: #321;
    font-size: 90%;
