@@ -159,5 +159,36 @@ In retrospect, there is one table that I think I will leave in.  The ratings stu
 So, panels:
 
 ```
-
+<div class="col-sm-3">
+	<h4>Ragged Point Inn &amp; Restaurant</h4>
+	<div class="panel panel-default">
+		<div class="panel-heading">Ratings</div>
+		<div class="panel-body">
+			...
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Price</div>
+		<div class="panel-body">
+			...
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Contact</div>
+		<div class="panel-body">
+			...
+			</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">Nearby Stops</div>
+		<div class="panel-body">
+			...
+		</div>
+	</div>
 ```
+
+In the first panel, we will leave the table, and I will come back to that, because bootstrap has some table stuff that we should be able to use.
+
+The price text I just put right in that panel's `panel-body`.
+
+The **Contact** and **Nearby Stops** I changed from tables to `ul` because bootstrap lets us do a lot of stuff with `ul` and `ul` is the right answer anyway since this is list stuff.
