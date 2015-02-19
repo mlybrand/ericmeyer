@@ -140,3 +140,24 @@ Then just one row inside our second row div, with a 10 column and a 2 column:
 	</div>
 </div>
 ```
+
+Okay, it is obvious that `col-sm-2` is wrong.  Let's bump that up:
+
+```
+<div class="col-sm-9">
+...
+</div>
+<div class="col-sm-3">
+...
+</div>
+```
+
+Already, using bootstrap and modern coding shows its advantage.  That was much easier to do than it would have been in the past.
+
+In retrospect, there is one table that I think I will leave in.  The ratings stuff is tabular in nature, so I believe it makes sense to leave that one.  Each of the units in this right-hand bar though, seem to be panels to me, so I will make them panels. (Making the left-hand nav a panel, might be my solution over there too...  but maybe I have to give up the left-hand nav as out-dated and come up with a new solution.  Too soon to tell... forward.)
+
+So, panels:
+
+```
+
+```
