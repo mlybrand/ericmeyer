@@ -4,14 +4,41 @@
 <head>
 <title>Chapter 3 Project</title>
 <style type="text/css">
-	table {
-		border: 1px solid red;
+	tr#days th {
+		color: #CCE;
+		background-color: #224;
+		font-weight: bold;
+		text-align: center;
+		padding: 1px 0.33em;
 	}
-	th {
-		border: 1px dotted red;
+	tr#title th {
+		background: #AAC;
+		color: black;
+		border: 1px solid #224;
+		font-size: 120%;
 	}
 	td {
-		border: 1px dotted gray;
+		border: 1px solid gray;
+		border-color: #BBB #EEE #EEE #BBB;
+	}
+	td.sat {
+		border-right: 1px solid #BBB;
+	}
+	td.sat, td.sun {
+		background: #FDD;
+	}
+	td.jun, td.aug {
+		background: #AAB;
+		color: #889;
+		border: 1px solid #AAB;
+		border-right-color: #99A;
+	}
+	tr#lastweek td {
+		border-bottom: 2px solid #AAB;
+	}
+	td.holiday {
+		background: #FAA;
+		border-color: #BBB #FCC #FCC #BBB;
 	}
 </style>
 </head>
@@ -35,7 +62,7 @@
 <td class="jul mon" id="jul01">1</td>
 <td class="jul tue" id="jul02">2</td>
 <td class="jul wed" id="jul03">3</td>
-<td class="jul thu" id="jul04"><a href="jul04.html">4</a></td>
+<td class="jul thu holiday" id="jul04"><a href="jul04.html">4</a></td>
 <td class="jul fri" id="jul05"><a href="jul05.html">5</a></td>
 <td class="jul sat" id="jul06">6</td>
 </tr>
