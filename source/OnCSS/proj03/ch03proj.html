@@ -7,29 +7,29 @@
 	table#calendar a {
 		text-decoration: none;
 	}
-	tr#days th {
+	table#calendar tr#days th {
 		color: #CCE;
 		background-color: #224;
 		font-weight: bold;
 		text-align: center;
 		padding: 1px 0.33em;
 	}
-	tr#title th {
+	table#calendar tr#title th {
 		background: #AAC;
 		color: black;
 		border: 1px solid #224;
 		font-size: 120%;
 	}
-	td {
+	table#calendar td {
 		color: #777;
 		text-align: right;
 		border: 1px solid gray;
 		border-color: #BBB #EEE #EEE #BBB;
 	}
-	td.sat {
+	table#calendar td.sat {
 		border-right: 1px solid #BBB;
 	}
-	td a {
+	table#calendar td a {
 		font-weight: bold;
 		display: block;
 		margin: 0;
@@ -43,21 +43,25 @@
 	table#calendar a:hover {
 		background: #FF6;
 	}
-	td.sat, td.sun {
+	table#calendar td.sat, table#calendar td.sun {
 		background: #FDD;
 	}
-	td.jun, td.aug {
+	table#calendar td.jun, table#calendar td.aug {
 		background: #AAB;
 		color: #889;
 		border: 1px solid #AAB;
 		border-right-color: #99A;
 	}
-	tr#lastweek td {
+	table#calendar tr#lastweek td {
 		border-bottom: 2px solid #AAB;
 	}
-	td.holiday {
+	table#calendar td.holiday {
 		background: #FAA;
 		border-color: #BBB #FCC #FCC #BBB;
+	}
+	table#calendar td#jul16 {
+		background-color: yellow;
+		border: 1px solid black;
 	}
 </style>
 </head>
