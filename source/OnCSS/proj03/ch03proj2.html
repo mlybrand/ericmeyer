@@ -10,7 +10,8 @@ table#calendar tr#days th {color: #CCE; background-color: #224;
    padding: 1px 0.33em;}
 table#calendar tr#title th {background: #AAC; color: black;
    border: 1px solid #242; font-size: 120%;}
-table#calendar td {color: #777; text-align: right;
+table#calendar td {
+   vertical-align: top;
    border: 1px solid gray;
    border-color: #BBB #EEE #EEE #BBB;}
 table#calendar td.sat {border-right: 1px solid #BBB;}
@@ -27,6 +28,38 @@ table#calendar td.holiday {background: #FAA;
    border-color: #BBB #FCC #FCC #BBB;}
 table#calendar td#jul16 {background-color: yellow; 
    border: 1px solid black;}
+div.event {
+   margin: 0.5em;
+}
+div.event span {
+   display: block;
+}
+span.time {
+   font-weight: bold;
+}
+span.loc {
+   color: #555;
+   font-style: italic;
+}
+div.date {
+   float: right;
+   text-align: center;
+   border: 1px solid gray;
+   border-width: 0 0 1px 1px;
+   padding: 0.125em 0.25em 0 0.25em;
+   margin: 0;
+   background: #F3F3F3;
+}
+td.sat div.date, td.sun div.date {
+   border-width: 0;
+   color: gray;
+   background: transparent;
+}
+td.jun div.date, td.aug div.date {
+   border-width: 0;
+   color: gray;
+   background: transparent;
+}
 </style>
 </head>
 <body>
