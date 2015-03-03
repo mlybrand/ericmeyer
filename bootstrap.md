@@ -192,3 +192,35 @@ In the first panel, we will leave the table, and I will come back to that, becau
 The price text I just put right in that panel's `panel-body`.
 
 The **Contact** and **Nearby Stops** I changed from tables to `ul` because bootstrap lets us do a lot of stuff with `ul` and `ul` is the right answer anyway since this is list stuff.
+
+The final `div` on that right side is a little problematic, in that I am not real sure how I want to think about it semantically. Bootstrap has this class called `well` that kind of gives the section a different look from its surrounding text, giving it an inset look.  So, let me use that on this travel tip:
+
+```
+<div id="traveltip" class="well">
+...
+</div>
+```
+
+Okay, now to tackle that table, then we just need to style it up and make it not suck :)
+
+Mostly, all we need to do is add classes to the table and bootstrap will take care of it for us.  First, I will get rid of the `cellspacing` attribute that Eric Meyer had to keep around back in the day, but we are safe removing now. Then we will add the class `table` which has the base styles in it. Then we will use the handy class of `table-striped` which will take care of the row striping for us.  The way I have the page done at present, I am feeling a little cramped on the right.  So, let's apply `table-condensed` also.
+
+One final thing, before we get to styling the page a bit.  The ratings asterisks have to go.  Bootstrap includes a bunch of glyphicons that we can easily use. I bet they have a cool star or something.  Let's see...
+
+Cool.  Not only do they have stars, they have filled and hollow ones.  That should give us a pretty nice effect:
+
+```
+<tr class="odd">
+    <td>Amenities</td>
+    <td class="r3">
+		<span class="glyphicon glyphicon-star"></span>
+		<span class="glyphicon glyphicon-star"></span>
+		<span class="glyphicon glyphicon-star"></span>
+		<span class="glyphicon glyphicon-star-empty"></span>
+		<span class="glyphicon glyphicon-star-empty"></span>
+	</td>
+</tr>
+```
+
+Aw yes!  I like that.
+
